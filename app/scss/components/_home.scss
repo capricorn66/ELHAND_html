@@ -1,0 +1,107 @@
+/* home
+*******************************************************************/
+
+.news-wall {
+  background-color: $gray-100;
+  &::before {
+    background-color: $gray-800;
+  }
+}
+
+.products-wall {
+  background-color: $gray-800;
+  &::before {
+    background-color: $app-color-1;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+}
+
+.certificates-wall {
+  &::before {
+    background-color: $gray-800;
+  }
+}
+
+.about-wall {
+  overflow: hidden;
+  text-align: center;
+  color: $white;
+  font-size: 18px;
+
+  &::before {
+    background-color: $app-color-1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($app-color-2,.7);
+    z-index: 1;
+  }
+
+  .parallax-background,
+  .parallax-window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    text-align: left;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+.news-wall,
+.products-wall,
+.certificates-wall,
+.about-wall {
+  position: relative;
+  padding: calc(30px + 5vh) 0 5vh;
+  min-height: 80vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 540px;
+    max-width: 60vw;
+    transform: translateX(-50%);
+    height: 3vh;
+    max-height: 30px;
+    z-index: 11;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 60px;
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin: 20px auto;
+      height: 10px;
+      background: $app-color-1;
+      top: 70px;
+      left: 50%;
+    }
+    strong {
+      font-weight: 600;
+    }
+  }
+}

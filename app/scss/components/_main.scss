@@ -1,0 +1,61 @@
+/* main
+*******************************************************************/
+
+main {
+  color: $gray-600;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  h4 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  h5 {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  h6 {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .table,
+  p {
+    color: $gray-600;
+  }
+  .table {
+    th {
+      font-weight: 400;
+    }
+  }
+
+  .link-with-icon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 20px 20px 0;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $app-color-1;
+    }
+    i {
+      font-size: 40px;
+      margin-right: 10px;
+      + span {
+        color: $gray-500;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+}

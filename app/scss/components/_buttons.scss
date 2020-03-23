@@ -1,0 +1,41 @@
+/* buttons
+*******************************************************************/
+
+.btn {
+  border-radius: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn-link {
+  color: $app-color-1;
+}
+
+.btn-primary {
+  background-color: $app-color-1;
+  border-color: $app-color-1;
+  font-size: 16px;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: darken($app-color-1, 6%);
+    border-color: darken($app-color-1, 6%);
+    box-shadow: none;
+  }
+}
+
+.btn-lg {
+  padding: 1rem 1.5rem;
+  i {
+    font-size: 24px;
+    line-height: 0;
+  }
+}
+
+.btn-bounce-h:hover i {
+  animation: bounce-h 1.4s infinite;
+}

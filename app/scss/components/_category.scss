@@ -1,0 +1,42 @@
+/* category
+*******************************************************************/
+
+.category-box {
+  display: block;
+  background: $white;
+  color: $gray-900;
+  padding: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-decoration: none;
+  @include transition(color .2s ease);
+  .category-box-body {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    img {
+      margin-bottom: 20px;
+      @include media-breakpoint-down(md) {
+        height: 140px;
+      }
+    }
+  }
+  .category-box-title {
+    font-size: 14px;
+    line-height: 1.2em;
+    i {
+      float: right;
+      font-size: 12px;
+      margin: 3px 0 0 7px;
+    }
+  }
+  &:hover {
+    color: $app-color-1;
+    text-decoration: none;
+    i {
+      animation: bounce-h 1.4s infinite;
+    }
+  }
+}

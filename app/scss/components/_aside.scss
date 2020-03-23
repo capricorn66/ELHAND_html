@@ -1,0 +1,40 @@
+/* aside
+*******************************************************************/
+
+aside {
+
+  .collapse-aside {
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid $gray-200;
+      padding-bottom: 40px;
+      &.collapse:not(.show) {
+        display: block;
+      }
+    }
+  }
+
+  .aside-nav {
+    list-style: none;
+    padding: 0;
+    .aside-nav-item {
+      display: block;
+      .aside-nav-link {
+        border-bottom: 1px solid $gray-200;
+        display: block;
+        padding: 8px 8px 10px 8px;
+        color: $gray-500;
+        font-weight: 300;
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          background-color: rgba($app-color-1,.1);
+        }
+      }
+      &.active .aside-nav-link {
+        background-color: rgba($app-color-1,.2);
+        font-weight: 500;
+        color: $gray-700;
+      }
+    }
+  }
+}

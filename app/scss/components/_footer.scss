@@ -1,0 +1,66 @@
+/* footer
+*******************************************************************/
+
+footer {
+  position: relative;
+  padding: calc(30px + 5vh) 0 0;
+  font-size: 14px;
+  background: linear-gradient(180deg, rgba($gray-100,.8) 0%, rgba($gray-100, 0) 50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 540px;
+    max-width: 60vw;
+    transform: translateX(-50%);
+    height: 3vh;
+    max-height: 30px;
+    z-index: 11;
+    background-color: $app-color-1;
+  }
+
+  .brand {
+    img {
+      width: 230px;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+
+  h6 {
+    line-height: 1.3em;
+    min-height: 2.6em;
+    margin-bottom: 20px;
+  }
+
+  .nav-link {
+    padding: 0;
+    margin-bottom: 15px;
+    @include transition(color .2s ease);
+    color: $gray-800;
+    &:hover,
+    &:focus {
+      color: $app-color-1;
+    }
+  }
+
+  .nav-link-social {
+    margin-bottom: -6px;
+    @include transition(color .2s ease);
+    color: $gray-300;
+    &:hover,
+    &:focus {
+      color: $app-color-1;
+    }
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+    background-color: $gray-800;
+    color: rgba($white, .9);
+    font-size: 12px;
+  }
+}
+
