@@ -6,6 +6,8 @@
   position: relative;
   margin-bottom: 0;
   background-color: transparent;
+  color: $white;
+
   &.jumbotron-sm {
     padding: 100px 0 30px;
     background-size: cover;
@@ -81,7 +83,25 @@
     z-index: 11;
   }
 
-  color: $white;
+  .swiper-pagination {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    .swiper-pagination-bullet {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $gray-800;
+      display: inline-block;
+      margin: 0 6px;
+      &.swiper-pagination-bullet-active {
+        background-color: $white;
+      }
+    }
+  }
+
   h1 {
     font-size: 64px;
     @include media-breakpoint-down(md) {

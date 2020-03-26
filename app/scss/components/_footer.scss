@@ -52,7 +52,8 @@ footer {
     color: $gray-300;
     &:hover,
     &:focus {
-      color: $app-color-1;
+      color: $gray-600;
+      text-decoration: none;
     }
   }
 

@@ -50,18 +50,23 @@
 
 main {
 
-  .nav-tabs {
+  .nav-tabs-container {
     position: relative;
+    padding-top: 12px;
     &::before {
       content: "";
       position: absolute;
-      bottom: 100%;
+      top: 0;
       right: 0;
       width: 50%;
       height: 12px;
       background: $app-color-1;
     }
+    .nav-tabs {
+
+    }
   }
+
   .tab-content {
     padding: 0;
     position: relative;

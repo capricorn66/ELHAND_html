@@ -3,6 +3,12 @@
 
 aside {
 
+  .navbar-toggler {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
   .collapse-aside {
     @include media-breakpoint-up(lg) {
       border-right: 1px solid $gray-200;
@@ -18,12 +24,69 @@ aside {
     padding: 0;
     .aside-nav-item {
       display: block;
+      &.aside-nav-item-dropdown {
+        position: relative;
+      }
+      .aside-sub-nav {
+        @include media-breakpoint-up(lg) {
+          position: absolute;
+          box-shadow: 0 5px 14px -2px rgba($gray-900,.6);
+          z-index: 11;
+          left: 100%;
+          top: 0;
+          margin-left: -5px;
+          background-color: $white;
+          &.collapsing,
+          &.collapse.show {
+            &::before {
+              content: "";
+              position: absolute;
+              right: 100%;
+              top: 9px;
+              width: 0;
+              height: 0;
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+              border-right:10px solid $app-color-1;
+            }
+            @include transition(height 0s ease);
+            width: 300px;
+          }
+        }
+        list-style: none;
+        padding: 0;
+        border: 1px solid $app-color-1;
+        .aside-sub-nav-item {
+          padding: 0;
+          &.active {
+            .aside-sub-nav-link {
+              background-color: $app-color-1;
+              border-color: $app-color-1;
+              color: $white;
+              text-decoration: none;
+            }
+          }
+
+          .aside-sub-nav-link {
+            border-bottom: 1px solid $gray-200;
+            padding: 8px 20px;
+            display: block;
+            color: $gray-500;
+            &:focus,
+            &:hover {
+              background-color: $app-color-1;
+              border-color: $app-color-1;
+              color: $white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
       .aside-nav-link {
         border-bottom: 1px solid $gray-200;
         display: block;
         padding: 8px 8px 10px 8px;
         color: $gray-500;
-        font-weight: 300;
         &:hover,
         &:focus {
           text-decoration: none;

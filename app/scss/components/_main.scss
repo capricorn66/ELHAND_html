@@ -2,7 +2,7 @@
 *******************************************************************/
 
 main {
-  color: $gray-600;
+  color: $body-color;
   h1 {
     font-size: 24px;
     margin-bottom: 40px;
@@ -56,6 +56,37 @@ main {
         line-height: 1.2em;
       }
     }
+  }
+
+  .product-image {
+    position: relative;
+    display: block;
+    &::before {
+      content: "\e90f";
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      color: $app-color-1;
+      @include transition(color .2s ease);
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    &:hover {
+      &::before {
+        color: $gray-800;
+      }
+    }
+
   }
 
 }

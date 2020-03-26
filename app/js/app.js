@@ -46,6 +46,14 @@ $(document).ready(function(e) {
         });
     });
 
+
+    [...document.querySelectorAll(".aside-sub-nav")].map( elem => {
+        $(elem).on('show.bs.collapse', function () {
+            hideOnClickOutside(elem);
+        });
+    });
+
+
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true

@@ -156,7 +156,7 @@ header {
                             color: $gray-300;
                             @include transition(color .2s ease);
                             &:hover {
-                                color: $app-color-1;
+                                color: $gray-600;
                             }
                         }
                         ~ .nav-item-social {
@@ -206,13 +206,17 @@ header {
                     }
                     .collapse-dropdown {
                         position: absolute;
-
+                        width: 100vw;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        box-shadow: 50vw 10px 20px 1px rgba($black,.5), -50vw 10px 20px 1px rgba($black,.5);
+                        background-color: $gray-800;
                         @include media-breakpoint-down(md) {
                             position: fixed;
                             top: 0;
                             height: 100vh;
                             width: 100vw;
-                        };
+                        }
                         &.collapsing,
                         &.collapse.show {
                             @include media-breakpoint-up(lg) {
@@ -230,11 +234,6 @@ header {
                             overflow-x: hidden;
                             -webkit-overflow-scrolling: touch;
                         }
-                        left: 0;
-                        width: 100%;
-                        box-shadow: 50vw 0 $gray-800, -50vw 0 $gray-800;
-                        background-color: $gray-800;
-                        opacity: .98;
 
                         .close-collapse {
                             color: $white;
@@ -248,7 +247,7 @@ header {
                             position: absolute;
                             cursor: pointer;
                             right: 0;
-                            top: 20px;
+                            top: -20px;
                             @include media-breakpoint-down(md) {
                                 position: relative;
                                 top: 0;
@@ -264,6 +263,14 @@ header {
 
                         .collapse-dropdown-body {
                             padding: 40px 0;
+                            @include media-breakpoint-only(xl) {
+                                max-width: 1110px;
+                                margin: 0 auto;
+                            }
+                            @include media-breakpoint-only(lg) {
+                                max-width: 932px;
+                                margin: 0 auto;
+                            }
                             @include media-breakpoint-only(md) {
                                 max-width: 690px;
                                 margin: 0 auto;

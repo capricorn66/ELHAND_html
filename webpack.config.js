@@ -15,6 +15,7 @@ function generateHtml(htmltemplate) {
 
 const htmlIndex = generateHtml('index');
 const htmlProduct = generateHtml('product');
+const htmlQuestion = generateHtml('question');
 
 
 module.exports = (env, options) => {
@@ -38,12 +39,13 @@ module.exports = (env, options) => {
                 {from: './app/images', to: 'images'},
             ]),
             new MiniCssExtractPlugin({
-                filename: devMode ? 'css/[name].css' : 'css/[name].[chunkhash].min.css',
-                chunkFilename: devMode ? 'css/[name].css' : 'css/[name].[chunkhash].min.css',
+                filename: devMode ? 'css/[name].css' : 'css/[name].min.css',
+                chunkFilename: devMode ? 'css/[name].css' : 'css/[name].min.css',
             }),
         ]
             .concat(htmlIndex)
-            .concat(htmlProduct),
+            .concat(htmlProduct)
+            .concat(htmlQuestion),
 
 
         optimization: {

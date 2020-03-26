@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 
     <title>Document</title>
-<link href="css/vendor.1a2771284a69e1878efc.min.css" rel="stylesheet"><link href="css/style.960593622e3f5bb71d9d.min.css" rel="stylesheet"></head>
+<link href="css/vendor.min.css" rel="stylesheet"><link href="css/style.min.css" rel="stylesheet"></head>
 <body>
 
 <header>
@@ -56,7 +56,7 @@
 
                             <div class="collapse-dropdown-body">
 
-                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0">
+                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0 position-relative">
                                     <div class="close-dropdown">
                                         <i class="icon-arrow-left d-lg-none"></i>
                                         <i class="icon-close d-none d-lg-inline"></i>
@@ -103,7 +103,7 @@
 
                             <div class="collapse-dropdown-body">
 
-                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0">
+                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0 position-relative">
                                     <div class="close-dropdown">
                                         <i class="icon-arrow-left d-lg-none"></i>
                                         <i class="icon-close d-none d-lg-inline"></i>
@@ -263,7 +263,7 @@
 
                             <div class="collapse-dropdown-body">
 
-                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0">
+                                <div class="d-flex justify-content-between align-items-center mb-30 mb-lg-0 position-relative">
                                     <div class="close-dropdown">
                                         <i class="icon-arrow-left d-lg-none"></i>
                                         <i class="icon-close d-none d-lg-inline"></i>
@@ -344,8 +344,24 @@
                         <li class="aside-nav-item">
                             <a href="" class="aside-nav-link">Bezpieczeństwa</a>
                         </li>
-                        <li class="aside-nav-item active">
-                            <a href="" class="aside-nav-link">Separacyjne</a>
+                        <li class="aside-nav-item aside-nav-item-dropdown active">
+                            <a class="aside-nav-link" data-toggle="collapse" href="#collapseSubMenu1" role="button" aria-expanded="false" aria-controls="collapseSubMenu1">
+                                Separacyjne
+                            </a>
+                            <ul class="aside-sub-nav collapse" id="collapseSubMenu1">
+                                <li class="aside-sub-nav-item active">
+                                    <a href="" class="aside-sub-nav-link">ET1o ** o mocy od 0,05 do 2,5 kVA</a>
+                                </li>
+                                <li class="aside-sub-nav-item">
+                                    <a href="" class="aside-sub-nav-link">ET1o ** o mocy od 0,05 do 0,5 kVA na szynę TS-35</a>
+                                </li>
+                                <li class="aside-sub-nav-item">
+                                    <a href="" class="aside-sub-nav-link">ET1o ** o mocy od 2,0 do 25 kVA</a>
+                                </li>
+                                <li class="aside-sub-nav-item">
+                                    <a href="" class="aside-sub-nav-link">ET3o ** o mocy od 0,05 do 40 kVA</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="aside-nav-item">
                             <a href="" class="aside-nav-link">Oddzielające</a>
@@ -392,25 +408,27 @@
                         <p>Transformatory separacyjne stosowane są w układach, gdzie wymagana jest separacja napięciowa. W wykonaniu standardowym transformatory przystosowane są do mocowania przy pomocy podstawy przyspawanej do rdzenia lub przykręcanych kątowników. Po uzgodnieniu transformatory mogą posiadać więcej odczepów. Zaciski prądowe mogą być umieszczone po jednej lub po obu stronach transformatora. Na życzenie transformatory mogą być montowane w obudowach o stopniu ochrony IP 23, IP 44 oraz IP 54 z możliwością wyprowadzenia kabli zasilających poprzez dławnice.</p>
                     </div>
                     <div class="col-lg-6">
-                        <a href="images/product-1.jpg" data-lightbox="product">
+                        <a href="images/product-1.jpg" data-lightbox="product" class="product-image">
                             <img src="images/product-1.jpg" class="img-fluid" alt="">
                         </a>
                         <a href="images/product-1.jpg" data-lightbox="product"></a>
                         <a href="images/product-1.jpg" data-lightbox="product"></a>
                     </div>
                 </div>
+                <div class="nav-tabs-container">
+                    <ul class="nav nav-tabs border-bottom-0 scroll-h" id="detailsTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="home" aria-selected="true">Dane techniczne </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="profile" aria-selected="false">Szkic i tabela wymiarów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="contact" aria-selected="false">Obudowy</a>
+                        </li>
+                    </ul>
+                </div>
 
-                <ul class="nav nav-tabs border-bottom-0 scroll-h" id="detailsTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="home" aria-selected="true">Dane techniczne </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="profile" aria-selected="false">Szkic i tabela wymiarów</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="contact" aria-selected="false">Obudowy</a>
-                    </li>
-                </ul>
                 <div class="tab-content mb-60" id="detailsTabContent">
                     <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                         <div class="table-responsive">
