@@ -41,6 +41,7 @@
         }
         position: relative;
         min-height: 70vh;
+        overflow: hidden;
         &::after {
           content: "";
           position: absolute;
@@ -128,6 +129,13 @@
       @include media-breakpoint-up(xl) {
         left: calc(-1 * ((100vw - 1110px) / 2));
       }
+      @include media-breakpoint-up(lg) {
+        left: calc(-1 * ((100vw - 932px) / 2));
+      }
+      @include media-breakpoint-up(md) {
+        left: calc(-1 * ((100vw - 688px) / 2));
+      }
+
       right: -30px;
       top: -6px;
       bottom: -6px;

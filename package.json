@@ -5,6 +5,7 @@
   "author": "Michał Terlecki",
   "private": true,
   "scripts": {
+    "server": "webpack-dev-server --host 192.168.1.4 --disableHostCheck true --content-base app/",
     "start": "webpack-dev-server --disableHostCheck true --content-base app/",
     "prebuild": "npm run clean",
     "build": "webpack --mode production",

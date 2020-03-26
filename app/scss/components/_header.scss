@@ -40,6 +40,9 @@ header {
         margin-top: -4px;
         padding: 20px;
         margin-right: -20px;
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
     }
 
     .nav-lang {
@@ -185,7 +188,7 @@ header {
                         }
                     }
                     > .nav-link {
-                        color: $gray-700;
+                        color: $gray-800;
                         padding: 6px 20px 10px;
                         @include media-breakpoint-down(md) {
                             padding: 10px 0;
