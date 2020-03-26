@@ -43,6 +43,10 @@
      .nav-item {
        .nav-link {
          color: $white;
+         &.active {
+           background: none;
+           color: $app-color-1;
+         }
        }
      }
    }

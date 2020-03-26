@@ -58,20 +58,12 @@ aside {
         border: 1px solid $app-color-1;
         .aside-sub-nav-item {
           padding: 0;
-          &.active {
-            .aside-sub-nav-link {
-              background-color: $app-color-1;
-              border-color: $app-color-1;
-              color: $white;
-              text-decoration: none;
-            }
-          }
-
           .aside-sub-nav-link {
             border-bottom: 1px solid $gray-200;
             padding: 8px 20px;
             display: block;
             color: $gray-500;
+            &.active,
             &:focus,
             &:hover {
               background-color: $app-color-1;
