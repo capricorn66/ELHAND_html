@@ -20,8 +20,10 @@ $(document).ready(function(e) {
         pagination: {
             el: '.jumbotron.swiper-container .swiper-pagination',
             type: 'bullets',
+            clickable: true,
         },
     });
+
 
     const html = document.documentElement;
     const navbarToggler = $('#navbarSupportedContent');

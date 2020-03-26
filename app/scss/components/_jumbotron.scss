@@ -90,12 +90,17 @@
     transform: translateX(-50%);
     z-index: 2;
     .swiper-pagination-bullet {
+      cursor: pointer;
       width: 24px;
       height: 24px;
       border-radius: 50%;
       background-color: $gray-800;
+      @include transition(background-color .2s ease);
       display: inline-block;
       margin: 0 6px;
+      &:hover {
+        background-color: rgba($white,.6);
+      }
       &.swiper-pagination-bullet-active {
         background-color: $white;
       }
