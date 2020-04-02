@@ -1,0 +1,36 @@
+/* forms
+*******************************************************************/
+
+.form-control {
+  border-radius: 0;
+  &:disabled,
+  &[readonly] {
+    background: $gray-200;
+  }
+}
+
+.input-group-text {
+  border: 0;
+  color: $gray-900;
+  background: transparent;
+  a[data-toggle="popover"] {
+    cursor: pointer;
+    color: $gray-900;
+    &:hover {
+      text-decoration: none;
+      color: $gray-900;
+    }
+  }
+}
+
+.custom-select {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-group {
+  -ms-flex-align: center;
+  align-items: center;
+}

@@ -33,6 +33,7 @@
 @import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
+@import "~bootstrap/scss/popover";
 
 @import "utilities/variables";
 @import "utilities/mixins";
@@ -55,5 +56,7 @@
 @import "components/main";
 @import "components/toggler";
 @import "components/table";
+@import "components/forms";
+@import "components/popover";
 
 @import '~swiper/src/swiper.scss';

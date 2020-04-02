@@ -108,6 +108,10 @@
         margin-left: #{$j}px !important;
         margin-right: #{$j}px !important;
     }
+    .mx-n#{$j} {
+        margin-left: -#{$j}px !important;
+        margin-right: -#{$j}px !important;
+    }
     .my-#{$j} {
         margin-top: #{$j}px !important;
         margin-bottom: #{$j}px !important;
@@ -301,4 +305,27 @@
     > * {
         white-space: nowrap;
     }
+}
+
+
+.row.gutter-xs {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row.gutter-xs > [class^="col-"],
+.row.gutter-xs > [class^=" col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row.gutter-sm {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row.gutter-sm > [class^="col-"],
+.row.gutter-sm > [class^=" col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
 }

@@ -6,27 +6,27 @@ main {
   margin-bottom: 40px;
   h1 {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   h2 {
     font-size: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   h3 {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   h4 {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   h5 {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   h6 {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
   }
   .table,
   p {
@@ -36,6 +36,12 @@ main {
     th {
       font-weight: 400;
     }
+  }
+
+  label,
+  .col-form-label {
+    font-weight: 300;
+    line-height: 1.2em;
   }
 
   .link-with-icon {
@@ -88,6 +94,18 @@ main {
       }
     }
 
+  }
+
+  .grayBox {
+    background-color: $gray-200;
+    padding: 20px 20px 0;
+    margin-bottom: 1rem;
+    @include media-breakpoint-down(xs) {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
 }

@@ -24,6 +24,7 @@ $(document).ready(function(e) {
         },
     });
 
+    $('[data-toggle="popover"]').popover();
 
     const html = document.documentElement;
     const navbarToggler = $('#navbarSupportedContent');
