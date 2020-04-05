@@ -64,6 +64,16 @@ $(document).ready(function(e) {
 
 });
 
+function toggle(source) {
+    const checkboxes = document.getElementsByClassName('toggle-checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] !== source)
+            checkboxes[i].checked = source.checked;
+    }
+}
+
+window.toggle = toggle;
+
 function hideOnClickOutside(element) {
 
     const outsideClickListener = event => {

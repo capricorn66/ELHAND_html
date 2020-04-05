@@ -11,4 +11,21 @@ body {
 
 a {
   color: $app-color-1;
+  &:focus,
+  &:hover {
+    color: darken($app-color-1, 10%)
+  }
+}
+
+
+ul:not([class]) {
+  list-style: none;
+  li::before {
+    content: "\2022";
+    color: $app-color-1;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }

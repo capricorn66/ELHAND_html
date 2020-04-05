@@ -16,6 +16,7 @@ function generateHtml(htmltemplate) {
 const htmlIndex = generateHtml('index');
 const htmlProduct = generateHtml('product');
 const htmlQuestion = generateHtml('question');
+const htmlDownload = generateHtml('download');
 
 
 module.exports = (env, options) => {
@@ -45,8 +46,8 @@ module.exports = (env, options) => {
         ]
             .concat(htmlIndex)
             .concat(htmlProduct)
-            .concat(htmlQuestion),
-
+            .concat(htmlQuestion)
+            .concat(htmlDownload),
 
         optimization: {
             minimizer: [

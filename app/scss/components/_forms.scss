@@ -23,14 +23,11 @@
   }
 }
 
-.custom-select {
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .form-group {
   -ms-flex-align: center;
   align-items: center;
+}
+
+textarea.form-control {
+  min-height: 92px;
 }

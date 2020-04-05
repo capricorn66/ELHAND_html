@@ -4,28 +4,24 @@
 main {
   color: $body-color;
   margin-bottom: 40px;
-  h1 {
+  h2 {
     font-size: 24px;
     margin-bottom: 1em;
   }
-  h2 {
+  h3 {
     font-size: 22px;
     margin-bottom: 1em;
   }
-  h3 {
+  h4 {
     font-size: 20px;
     margin-bottom: 1em;
   }
-  h4 {
+  h5 {
     font-size: 18px;
     margin-bottom: 1em;
   }
-  h5 {
-    font-size: 16px;
-    margin-bottom: 1em;
-  }
   h6 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 1em;
   }
   .table,
@@ -93,12 +89,11 @@ main {
         color: $gray-800;
       }
     }
-
   }
 
   .grayBox {
     background-color: $gray-200;
-    padding: 20px 20px 0;
+    padding: 20px 20px 5px;
     margin-bottom: 1rem;
     @include media-breakpoint-down(xs) {
       margin-left: -15px;

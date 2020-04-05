@@ -1,0 +1,35 @@
+/* custom forms
+*******************************************************************/
+
+.custom-select {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-checkbox-lg {
+  padding-left: 2.5rem;
+
+  .custom-control-label {
+    &::after,
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      left: -2.5rem;
+      top: -0.3rem;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $app-color-1;
+    background-color: $app-color-1;
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    border-color: lighten($app-color-1,15%);
+    background-color: lighten($app-color-1,15%);
+  }
+
+}
+
