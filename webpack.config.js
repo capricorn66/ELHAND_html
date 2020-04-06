@@ -16,7 +16,12 @@ function generateHtml(htmltemplate) {
 const htmlIndex = generateHtml('index');
 const htmlProduct = generateHtml('product');
 const htmlQuestion = generateHtml('question');
+const htmlDefinitions = generateHtml('definitions');
 const htmlDownload = generateHtml('download');
+const htmlCareer = generateHtml('career');
+const htmlCareerDetails = generateHtml('career-details');
+const htmlNews = generateHtml('news');
+const htmlNewsDetails = generateHtml('news-details');
 
 
 module.exports = (env, options) => {
@@ -48,7 +53,12 @@ module.exports = (env, options) => {
             .concat(htmlIndex)
             .concat(htmlProduct)
             .concat(htmlQuestion)
-            .concat(htmlDownload),
+            .concat(htmlDefinitions)
+            .concat(htmlDownload)
+            .concat(htmlCareer)
+            .concat(htmlCareerDetails)
+            .concat(htmlNews)
+            .concat(htmlNewsDetails),
 
         optimization: {
             minimizer: [

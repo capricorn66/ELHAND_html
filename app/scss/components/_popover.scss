@@ -33,6 +33,16 @@
     ul {
       padding-left: 10px;
       margin-bottom: 10px;
+      list-style: none;
+      li::before {
+        content: "\2022";
+        color: $app-color-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
     }
+
   }
 }

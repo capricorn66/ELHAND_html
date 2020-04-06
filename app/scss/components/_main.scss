@@ -3,7 +3,7 @@
 
 main {
   color: $body-color;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   h2 {
     font-size: 24px;
     margin-bottom: 1em;
@@ -24,13 +24,50 @@ main {
     font-size: 16px;
     margin-bottom: 1em;
   }
-  .table,
-  p {
-    color: $gray-600;
-  }
   .table {
     th {
       font-weight: 400;
+    }
+  }
+
+  ul + h1,
+  ul + h2,
+  ul + h3,
+  ul + h4,
+  ul + h5,
+  ul + h6,
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6 {
+    margin-top: 1.6em;
+  }
+
+  h2 + .date {
+    margin-top: -1.6em;
+    margin-bottom: 1.6em;
+    color: $gray-300;
+  }
+
+  ul:not([class]) {
+    list-style: none;
+    padding-left: 28px;
+    li {
+      margin-bottom: .5rem;
+      &::before {
+        content: "\2022";
+        color: $app-color-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 25px;
+        margin-left: -25px;
+        font-size: 30px;
+        line-height: 0;
+        top: 6px;
+        position: relative;
+      }
     }
   }
 
@@ -57,6 +94,41 @@ main {
       + span {
         color: $gray-500;
         line-height: 1.2em;
+      }
+    }
+  }
+
+  .gallery-image {
+    position: relative;
+    display: block;
+    &::before {
+      content: "\e90f";
+      padding-top: calc(50% - 20px);
+      position: absolute;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($app-color-1, .7);
+      opacity: 0;
+      @include transition(opacity .2s ease);
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
       }
     }
   }

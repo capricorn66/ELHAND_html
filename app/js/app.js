@@ -2,8 +2,11 @@
 
 import $ from "jquery";
 import Swiper from "swiper";
+import debounce from 'lodash.debounce';
 import "./hasAttr";
 import {rwdMedia} from "./rwdMedia";
+import {rippletInit} from './ripplet';
+import './nav-scroll';
 import lightbox from "lightbox2";
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
@@ -11,8 +14,12 @@ import 'bootstrap/js/dist/modal';
 import 'bootstrap/js/dist/popover';
 import 'bootstrap/js/dist/tab';
 import 'jquery-parallax.js';
+import Cookies from 'js-cookie';
 
+window.debounce = debounce;
 window.rwdMedia = rwdMedia;
+window.Cookies = Cookies;
+window.rippletInit = rippletInit;
 
 $(document).ready(function(e) {
 
@@ -23,6 +30,10 @@ $(document).ready(function(e) {
             clickable: true,
         },
     });
+
+    rippletInit();
+
+    $('.nav-scroll').navScroll();
 
     $('[data-toggle="popover"]').popover();
 

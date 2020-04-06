@@ -17,6 +17,7 @@
   background-color: $app-color-1;
   border-color: $app-color-1;
   font-size: 16px;
+  color: white !important;
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
@@ -24,7 +25,20 @@
   &:focus {
     background-color: darken($app-color-1, 6%);
     border-color: darken($app-color-1, 6%);
-    box-shadow: none;
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $body-color;
+  color: $body-color;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: darken($app-color-1, 6%);
+    border-color: darken($app-color-1, 6%);
+    box-shadow: none !important;
   }
 }
 

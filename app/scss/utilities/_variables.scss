@@ -13,14 +13,26 @@ $gray-700: #585858;
   $gray-800: #474747;
   $gray-900: #343434;
 
-$body-color: #404040;
+$body-color: $gray-800;
 
 $alert-red: #ff4200;
 $alert-green: #559f4f;
 $alert-yellow: #ffd300;
 $alert-blue: #0b7bb9;
 
+
 //primary colors
 
 $app-color-1: #F28300;
 $app-color-2: $gray-600;
+
+
+// icons
+
+$icon-arrow-left-gray: url("../images/arrow-left-gray.svg") !default;
+$icon-arrow-right-gray: url("../images/arrow-right-gray.svg") !default;
+
+
+// Navs
+
+$nav-padding-x: 1.5rem !default;
