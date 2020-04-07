@@ -20,8 +20,10 @@ const htmlDefinitions = generateHtml('definitions');
 const htmlDownload = generateHtml('download');
 const htmlCareer = generateHtml('career');
 const htmlCareerDetails = generateHtml('career-details');
+const htmlCareerForm = generateHtml('career-form');
 const htmlNews = generateHtml('news');
 const htmlNewsDetails = generateHtml('news-details');
+const htmlContact = generateHtml('contact');
 
 
 module.exports = (env, options) => {
@@ -57,8 +59,10 @@ module.exports = (env, options) => {
             .concat(htmlDownload)
             .concat(htmlCareer)
             .concat(htmlCareerDetails)
+            .concat(htmlCareerForm)
             .concat(htmlNews)
-            .concat(htmlNewsDetails),
+            .concat(htmlNewsDetails)
+            .concat(htmlContact),
 
         optimization: {
             minimizer: [

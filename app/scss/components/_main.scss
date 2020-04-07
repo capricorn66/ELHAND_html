@@ -6,7 +6,7 @@ main {
   padding-bottom: 40px;
   h2 {
     font-size: 24px;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
   }
   h3 {
     font-size: 22px;
@@ -73,7 +73,7 @@ main {
 
   label,
   .col-form-label {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2em;
   }
 
@@ -95,6 +95,14 @@ main {
         color: $gray-500;
         line-height: 1.2em;
       }
+    }
+  }
+
+  .google-map {
+    border: 5px solid $gray-300;
+    margin: 40px 0;
+    iframe {
+      display: block;
     }
   }
 

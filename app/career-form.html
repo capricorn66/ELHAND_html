@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-<link href="css/vendor.min.css" rel="stylesheet"><link href="css/style.min.css" rel="stylesheet"></head>
+</head>
 <body>
 
     <header>
@@ -112,7 +112,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">AKTUALNOŚCI</a>
+                            <a class="nav-link" href="#">AKTUALNOŚCI</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#collapseMenu-products" role="button" aria-expanded="false" aria-controls="collapseMenu-products">
@@ -272,7 +272,7 @@
                             <a class="nav-link" href="#">ELHAND PQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">KARIERA</a>
+                            <a class="nav-link active" href="#">KARIERA</a>
                         </li>
                         <li class="nav-item order-lg-last ml-lg-10">
                             <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#collapseMenu-contact" role="button" aria-expanded="false" aria-controls="collapseMenu-contact">
@@ -335,7 +335,7 @@
 
     <section class="jumbotron jumbotron-sm" style="background-image: url('images/jumbotron-sm-1.jpg')">
         <div class="container">
-            <h1>AKTUALNOŚCI</h1>
+            <h1>KARIERA</h1>
         </div>
     </section>
 
@@ -343,34 +343,144 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#">Aktualności</a></li>
+                <li class="breadcrumb-item"><a href="#">Kariera</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">Formularz aplikacyjny</a></li>
             </ol>
         </nav>
     </div>
 
     <div class="container mb-60">
         <main>
-            <h2>ADIPEC 2019 W Abu Dhabi</h2>
-            <div class="date">2019-11-26</div>
-            <p>Z przyjemnością informujemy że 12.11.2019r. podczas wystawy/konferencji ADIPEC-2019 w Abu Dhabi firma
-                ELHAND TRANDFORMATORY miała okazję zaprezentować NOWOSĆ na rynku – Transformatorowy Filtr Harmonicznych (tłum. New Generation
-                Transformer Harmonic Filter Hybryd).  </p>
-            <a href="" class="btn btn-primary px-35">Więcej</a>
 
-            <hr class="my-30">
+            <div class="mb-40">
+                <h2>Formularz aplikacyjny</h2>
+                <p>Aby aplikować na wybrane stanowisko musisz wypełnić poniższy formularz dołączając swoje CV oraz list motywacyjny</p>
+            </div>
 
-            <h2>Otwarcie biura w Gliwicach</h2>
-            <div class="date">2019-11-26</div>
-            <p>Zapraszamy do naszego nowo otwartego biura w Gliwicach znajdującego się przy ulicy Daszyńskiego 5 (1-sze piętro, pokój 104).
-                Dnia 01.09.2019 zostało otwarte biuro naszej firmy w Gliwicach przy ulicy Daszyńskiego 5 (1-sze piętro, pokój 104).  </p>
-            <a href="" class="btn btn-primary px-35">Więcej</a>
+            <div class="mb-40">
+                <h2>Wybierz stanowisko</h2>
+                <div class="form-group row">
+                    <label for="input1" class="col-md-4 col-lg-3 col-form-label">Stanowisko</label>
+                    <div class="col-md-8 col-lg-9">
+                        <select class="custom-select" id="input1">
+                            <option selected>Wybierz...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input2" class="col-md-4 col-lg-3 col-form-label">Numer referencyjny</label>
+                    <div class="col-md-5 col-lg-4">
+                        <input type="text" class="form-control" id="input2">
+                    </div>
+                </div>
+            </div>
 
-            <hr class="my-30">
+            <div class="mb-40">
+                <h2>Dane personalne</h2>
+                <div class="form-group row">
+                    <label for="input3" class="col-md-4 col-lg-3 col-form-label">Imię i nazwisko *</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="text" class="form-control" id="input3">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input4" class="col-md-4 col-lg-3 col-form-label">Data urodzenia *</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="date" class="form-control" id="input4">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input5" class="col-md-4 col-lg-3 col-form-label">Miejsce urodzenia</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="text" class="form-control" id="input5">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input6" class="col-md-4 col-lg-3 col-form-label">Telefon *</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="tel" class="form-control" id="input6">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input7" class="col-md-4 col-lg-3 col-form-label">Email *</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="email" class="form-control" id="input7">
+                    </div>
+                </div>
+            </div>
 
-            <h2>Elhand PQ</h2>
-            <div class="date">2019-11-26</div>
-            <p>Elhand PQ – Elhand Power Quality Harmonic Simulation Software – to unikalny program symulacyjny, przeznaczony do obliczania poziomu zniekształceń napięcia i prądu w sieci o dowolnej strukturze zasilania i odbiorów. Program pozwala na rozwiązywanie problemów z zakłóceniami i harmonicznymi oraz szybką i dokładną analizę parametrów całego układu zasilania. </p>
-            <a href="" class="btn btn-primary px-35">Więcej</a>
+            <div class="mb-40">
+                <h2>Kompetencje</h2>
+                <div class="form-group row">
+                    <label for="input8" class="col-md-4 col-lg-3 col-form-label">Szkoła</label>
+                    <div class="col-md-8 col-lg-9">
+                        <select class="custom-select" id="input8">
+                            <option selected>Wybierz...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input9" class="col-md-4 col-lg-3 col-form-label">Języki obce</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="text" class="form-control" id="input9">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="input10" class="col-md-4 col-lg-3 col-form-label">Kursy i uprawnienia</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input type="text" class="form-control" id="input10">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-8 offset-md-4 col-lg-9 offset-lg-3">
+                        <a href="" type="button" data-toggle="modal" data-target="#newFieldModal">dodaj dodatkowe pole</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-40">
+                <h2>Informacje dodatkowe</h2>
+                <div class="form-group row align-items-start">
+                    <label for="input11" class="col-md-4 col-lg-3 col-form-label">Uwagi</label>
+                    <div class="col-md-8 col-lg-9">
+                        <textarea class="form-control" name="" id="input11" cols="30" rows="8"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-40">
+                <h2>Dołącz pliki</h2>
+                <div class="form-group row align-items-start">
+                    <label class="col-md-4 col-lg-3 col-form-label">Plik</label>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="input12">
+                            <label class="custom-file-label" for="input12" data-browse="Przeglądaj..."></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-8 offset-md-4 col-lg-9 offset-lg-3">
+                        <a href="">dodaj nowy plik</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-control custom-checkbox custom-checkbox-lg mb-60">
+                <input type="checkbox" class="custom-control-input toggle-checkbox" id="input13">
+                <label class="custom-control-label" for="input13">Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumencie CV zarówno na potrzeby prowadzonej rekrutacji jak również po jej zakończeniu przez  z siedzibą
+                    w  , ul.  . Jednocześnie wyrażam zgodę na przechowywanie przekazanego dokumentu CV oraz przetwarzanie moich danych osobowych w celu tworzenia i prowadzenia elektronicznej bazy danych co umożliwi wykorzystanie moich danych osobowych w kolejnych procesach rekrutacyjnych. Zostałem poinformowany o prawie dostępu do treści swoich danych oraz ich poprawiania oraz zwrócenia się z żądaniem usunięcia podanych danych osobowych . *</label>
+            </div>
+
+            <p class="mb-30">Proin vel ultrices nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet eros cursus, dictum sem ac, imperdiet tellus. Vestibulum tristique elit et mi rhoncus aliquam. Aliquam vitae lorem sed lorem blandit pharetra eget eu risus. Aenean eu felis faucibus, pretium neque eget, sollicitudin sapien. Maecenas vestibulum maximus justo in sodales. Donec tincidunt risus ut nisl lacinia, vitae tempus ipsum lobortis. Sed placerat, felis vel rhoncus elementum, augue purus eleifend metus, a feugiat elit libero ac magna. Morbi massa erat, laoreet quis scelerisque at, convallis non ipsum. Maecenas nulla justo, ullamcorper non iaculis vitae, lobortis a tortor. Maecenas ultrices maximus iaculis. Morbi imperdiet sed nulla id ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque quam tortor, mattis in aliquam et, placerat eget libero. Nulla a consequat metus.</p>
+            <p>Morbi id lorem ut velit blandit condimentum. Sed imperdiet est lorem, ut auctor risus varius ut. Vivamus ornare finibus egestas. Praesent condimentum, lorem in consectetur vestibulum, nisl ligula tempus mi, vel eleifend dui tortor at leo. Etiam rutrum dictum enim id porttitor. Mauris luctus ut nisi sed viverra. Vivamus pharetra, leo quis rhoncus semper, dolor mi hendrerit lectus, in tincidunt nisi massa vitae mi. Maecenas laoreet sapien mi, a consequat nisi tincidunt a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi placerat at sem ullamcorper tempor. Curabitur sit amet leo sit amet diam dapibus ullamcorper. Sed non ante nec purus facilisis faucibus in sed nisi. Praesent scelerisque leo quis erat mattis, a auctor nunc dapibus. </p>
+
         </main>
     </div>
 
@@ -472,11 +582,36 @@
 
     </footer>
 
+    <div class="modal fade" id="newFieldModal" tabindex="-1" role="dialog" aria-labelledby="newFieldModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newFieldModalLabel">Dodatkowe pole</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="icon-close font-12"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="modalInput" class="col-md-4 col-lg-3 col-form-label">Nazwa pola</label>
+                        <div class="col-md-8 col-lg-9">
+                            <input type="text" class="form-control" id="modalInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Anuluj</button>
+                    <button type="button" class="btn btn-primary">Dodaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="bs4-xs d-block d-sm-none"></div>
     <div class="bs4-sm d-none d-sm-block d-md-none"></div>
     <div class="bs4-md d-none d-md-block d-lg-none"></div>
     <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
     <div class="bs4-xl d-none d-xl-block"></div>
 
-<script type="text/javascript" src="js/vendor.min.js"></script><script type="text/javascript" src="js/script.min.js"></script><script type="text/javascript" src="js/style.min.js"></script></body>
+</body>
 </html>

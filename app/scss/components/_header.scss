@@ -195,6 +195,7 @@ header {
                             border: 0;
                         }
                         border-bottom: 4px solid $white;
+                        &.active,
                         &:hover {
                             border-bottom-color: $app-color-1;
                         }

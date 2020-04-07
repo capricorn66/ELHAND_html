@@ -9,14 +9,15 @@
 }
 
 .custom-checkbox-lg {
-  padding-left: 2.5rem;
+  padding-left: 3rem;
 
   .custom-control-label {
+    line-height: 1.5em;
     &::after,
     &::before {
       width: 2rem;
       height: 2rem;
-      left: -2.5rem;
+      left: -3rem;
       top: -0.3rem;
     }
   }
@@ -33,3 +34,25 @@
 
 }
 
+.custom-file-label {
+  border-radius: 0;
+  padding-right: 160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  @include media-breakpoint-down(xs) {
+    padding-right: 120px;
+  }
+  &::after {
+    background-color: $gray-600;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    @include media-breakpoint-down(xs) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

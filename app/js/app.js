@@ -15,13 +15,17 @@ import 'bootstrap/js/dist/popover';
 import 'bootstrap/js/dist/tab';
 import 'jquery-parallax.js';
 import Cookies from 'js-cookie';
+import bsCustomFileInput from 'bs-custom-file-input';
 
 window.debounce = debounce;
 window.rwdMedia = rwdMedia;
 window.Cookies = Cookies;
 window.rippletInit = rippletInit;
+window.bsCustomFileInput = bsCustomFileInput;
 
 $(document).ready(function(e) {
+
+    bsCustomFileInput.init();
 
     const jumbotronSwiper = new Swiper('.jumbotron.swiper-container', {
         pagination: {
