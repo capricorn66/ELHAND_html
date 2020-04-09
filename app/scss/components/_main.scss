@@ -183,4 +183,30 @@ main {
     }
   }
 
+  .server-error {
+    text-align: center;
+    padding: 60px 0;
+    .server-error-head {
+      font-size: 160px;
+      @include media-breakpoint-down(xs) {
+        font-size: 120px;
+      }
+      font-weight: 600;
+      position: relative;
+      color: rgba($gray-300,.6);
+      letter-spacing: -.02em;
+      transform: translateX(1%);
+      &::after {
+        content: ".";
+        color: $app-color-1;
+        text-shadow: -4px -4px white, 0 -5px white, -5px 0 white, 5px -5px white, -5px 5px white;
+        @include media-breakpoint-down(xs) {
+          text-shadow: -2px -2px white, 0 -3px white, -3px 0 white, 3px -3px white, -3px 3px white;
+        }
+        display: inline-block;
+        transform: translateX(-70%);
+      }
+    }
+  }
+
 }
