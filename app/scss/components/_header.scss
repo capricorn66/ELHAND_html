@@ -190,6 +190,7 @@ header {
                     > .nav-link {
                         color: $gray-800;
                         padding: 6px 20px 10px;
+                        font-weight: 500;
                         @include media-breakpoint-down(md) {
                             padding: 10px 0;
                             border: 0;

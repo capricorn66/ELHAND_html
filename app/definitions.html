@@ -145,7 +145,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-1.jpg" alt="Transformatory" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-1.webp" type="image/webp">
+                                                                    <source srcset="images/category-1.jpg" type="image/jpeg">
+                                                                    <img src="images/category-1.jpg" alt="Transformatory" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Transformatory <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -153,7 +157,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-2.jpg" alt="Dławiki" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-2.webp" type="image/webp">
+                                                                    <source srcset="images/category-2.jpg" type="image/jpeg">
+                                                                    <img src="images/category-2.jpg" alt="Dławiki" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Dławiki <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -161,7 +169,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-3.jpg" alt="Filtry" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-3.webp" type="image/webp">
+                                                                    <source srcset="images/category-3.jpg" type="image/jpeg">
+                                                                    <img src="images/category-3.jpg" alt="Filtry" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Filtry <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -169,7 +181,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-4.jpg" alt="Zasilacze" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-4.webp" type="image/webp">
+                                                                    <source srcset="images/category-4.jpg" type="image/jpeg">
+                                                                    <img src="images/category-4.jpg" alt="Zasilacze" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Zasilacze <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -177,7 +193,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-5.jpg" alt="Urządzenia specjalne" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-5.webp" type="image/webp">
+                                                                    <source srcset="images/category-5.jpg" type="image/jpeg">
+                                                                    <img src="images/category-5.jpg" alt="Urządzenia specjalne" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Urządzenia specjalne <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -185,7 +205,11 @@
                                                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
                                                     <a href="" class="category-box h-100">
                                                             <span class="category-box-body">
-                                                                <img src="images/category-6.jpg" alt="Akcesoria" class="img-fluid">
+                                                                <picture>
+                                                                    <source srcset="images/category-6.webp" type="image/webp">
+                                                                    <source srcset="images/category-6.jpg" type="image/jpeg">
+                                                                    <img src="images/category-6.jpg" alt="Akcesoria" class="img-fluid">
+                                                                </picture>
                                                             </span>
                                                         <span class="category-box-title">Akcesoria <i class="icon-arrow-right"></i></span>
                                                     </a>
@@ -353,11 +377,46 @@
         <main>
             <h2>Definicje</h2>
 
-            <div class="accordion" id="accordionDdefinitions">
+            <div class="accordion" id="accordionDefinitions">
+
+                <button class="btn btn-accordion collapsed" id="heading0" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                    Element with sub collapse
+                </button>
+                <div id="collapse0" class="collapse" aria-labelledby="heading0" data-parent="#accordionDefinitions">
+                    <div class="accordion-body">
+
+                        <div class="accordion pl-15 pl-sm-30" id="accordionDefinitionsSub1">
+
+                            <button class="btn btn-accordion collapsed" id="subHeading1" type="button" data-toggle="collapse" data-target="#subCollapse1" aria-expanded="true" aria-controls="subCollapse1">
+                                Transformator
+                            </button>
+                            <div id="subCollapse1" class="collapse" aria-labelledby="subHeading1" data-parent="#accordionDefinitionsSub1">
+                                <div class="accordion-body">
+                                    <p>
+                                        aparat elektryczny mający minimum 2 uzwojenia. Jego zadaniem jest zmiana parametrów przesyłanej energii elektrycznej prądu przemiennego
+                                        z jednego napięcia na inne, o tej samej częstotliwości.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-accordion collapsed" id="subHeading2" type="button" data-toggle="collapse" data-target="#subCollapse2" aria-expanded="false" aria-controls="subCollapse2">
+                                Transformator oddzielający
+                            </button>
+                            <div id="subCollapse2" class="collapse" aria-labelledby="subHeading2" data-parent="#accordionDefinitionsSub1">
+                                <div class="accordion-body">
+                                    <p>transformator, w którym uzwojenia pierwotne i wtórne są oddzielone galwanicznie za pomocą izolacji podstawowej.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
                 <button class="btn btn-accordion collapsed" id="heading1" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                     Transformator
                 </button>
-                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionDdefinitions">
+                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionDefinitions">
                     <div class="accordion-body">
                         <p>
                             aparat elektryczny mający minimum 2 uzwojenia. Jego zadaniem jest zmiana parametrów przesyłanej energii elektrycznej prądu przemiennego
@@ -369,7 +428,7 @@
                 <button class="btn btn-accordion collapsed" id="heading2" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                     Transformator oddzielający
                 </button>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionDdefinitions">
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionDefinitions">
                     <div class="accordion-body">
                         <p>transformator, w którym uzwojenia pierwotne i wtórne są oddzielone galwanicznie za pomocą izolacji podstawowej.</p>
                     </div>
@@ -378,7 +437,7 @@
                 <button class="btn btn-accordion" id="heading3" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                     SELV (safety extra low voltage)
                 </button>
-                <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionDdefinitions">
+                <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionDefinitions">
                     <div class="accordion-body">
                         <p>bardzo niskie napięcie bezpieczne, nie przekraczające 50 V prądu przemiennego AC lub 120 V wygładzonego prądu stałego DC, mierzone między
                             przewodami lub między dowolnym przewodem a ziemią, w obwodzie oddzielonym od źródeł zasilania za pomocą transformatora bezpieczeństwa,
