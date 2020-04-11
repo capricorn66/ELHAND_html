@@ -25,6 +25,7 @@ const htmlNews = generateHtml('news');
 const htmlNewsDetails = generateHtml('news-details');
 const htmlContact = generateHtml('contact');
 const htmlServer = generateHtml('server');
+const htmlFiles = generateHtml('files');
 
 
 module.exports = (env, options) => {
@@ -64,7 +65,8 @@ module.exports = (env, options) => {
             .concat(htmlNews)
             .concat(htmlNewsDetails)
             .concat(htmlContact)
-            .concat(htmlServer),
+            .concat(htmlServer)
+            .concat(htmlFiles),
 
         optimization: {
             minimizer: [
