@@ -16,12 +16,14 @@ import 'bootstrap/js/dist/tab';
 import 'jquery-parallax.js';
 import Cookies from 'js-cookie';
 import bsCustomFileInput from 'bs-custom-file-input';
+import {addBackToTop} from 'vanilla-back-to-top';
 
 window.debounce = debounce;
 window.rwdMedia = rwdMedia;
 window.Cookies = Cookies;
 window.rippletInit = rippletInit;
 window.bsCustomFileInput = bsCustomFileInput;
+window.addBackToTop = addBackToTop;
 
 $(document).ready(function(e) {
 
@@ -36,6 +38,13 @@ $(document).ready(function(e) {
     });
 
     rippletInit();
+
+    addBackToTop({
+        diameter: 56,
+        backgroundColor: '#FFFFFF',
+        textColor: '#F28300',
+        innerHTML: ''
+    });
 
     $('.nav-scroll').navScroll();
 

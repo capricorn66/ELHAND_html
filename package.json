@@ -23,7 +23,8 @@
     "lodash.debounce": "^4.0.8",
     "popper.js": "^1.15.0",
     "ripplet.js": "^0.1.14",
-    "swiper": "^4.5.0"
+    "swiper": "^4.5.0",
+    "vanilla-back-to-top": "^7.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
