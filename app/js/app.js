@@ -37,6 +37,11 @@ $(document).ready(function(e) {
         },
     });
 
+
+    window.onscroll = function() {handleHeader()};
+    handleHeader();
+
+
     rippletInit();
 
     addBackToTop({
@@ -127,6 +132,15 @@ function hideOnClickOutside(element) {
 }
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length )
+
+
+function handleHeader() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.body.className = "sm";
+    } else {
+        document.body.className = "";
+    }
+}
 
 
 // jQuery.fn.jquery

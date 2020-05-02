@@ -88,6 +88,11 @@
   padding: calc(30px + 5vh) 0 5vh;
   min-height: 80vh;
 
+  .parallax-mirror {
+    position: static !important;
+    overflow: visible !important;
+  }
+
   &::before {
     content: "";
     position: absolute;

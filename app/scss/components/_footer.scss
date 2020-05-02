@@ -49,6 +49,13 @@ footer {
     background-color: $gray-800;
     color: rgba($white, .9);
     font-size: 12px;
+    a {
+      color: rgba($white, .8);
+      &:focus,
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
 

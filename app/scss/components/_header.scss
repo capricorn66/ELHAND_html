@@ -1,6 +1,7 @@
 /* header
 *******************************************************************/
 
+
 header {
     position: sticky;
     top: 0;
@@ -20,6 +21,19 @@ header {
         position: relative;
     }
 
+    body.sm & {
+        .brand {
+            @include media-breakpoint-up(lg) {
+                margin: 10px 0;
+            }
+            img {
+                @include media-breakpoint-up(lg) {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
     .brand {
         margin: 10px 0;
         @include media-breakpoint-up(lg) {
@@ -32,6 +46,7 @@ header {
             }
             @include media-breakpoint-up(lg) {
                 width: 230px;
+                @include transition(width .3s ease);
             }
         }
     }
