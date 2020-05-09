@@ -1,0 +1,25 @@
+/* pagination
+*******************************************************************/
+
+.pagination {
+
+  .page-item {
+    .page-link {
+      color: $app-color-1;
+      border-radius: 19px;
+      height: 38px;
+      min-width: 38px;
+      text-align: center;
+      margin: 0 4px;
+      &:hover,
+      &:focus {
+        background-color: $gray-200;
+      }
+      i {
+        font-size: 12px;
+        margin: -3px 0 0;
+      }
+    }
+
+  }
+}

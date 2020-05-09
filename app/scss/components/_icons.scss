@@ -24,6 +24,63 @@
   vertical-align: middle;
 }
 
+.icon-file-csv:before {
+  content: "\e907";
+}
+.icon-file-doc:before {
+  content: "\e911";
+}
+.icon-file-docx:before {
+  content: "\e912";
+}
+.icon-file-iso:before {
+  content: "\e913";
+}
+.icon-file-jpg:before {
+  content: "\e914";
+}
+.icon-file-mp3:before {
+  content: "\e915";
+}
+.icon-file-mp4:before {
+  content: "\e916";
+}
+.icon-file-pdf:before {
+  content: "\e917";
+}
+.icon-file-png:before {
+  content: "\e918";
+}
+.icon-file-ppt:before {
+  content: "\e919";
+}
+.icon-file-pptx:before {
+  content: "\e91a";
+}
+.icon-file-svg:before {
+  content: "\e91b";
+}
+.icon-file-tiff:before {
+  content: "\e91c";
+}
+.icon-file-txt:before {
+  content: "\e91d";
+}
+.icon-file-xls:before {
+  content: "\e91e";
+}
+.icon-file-xlsx:before {
+  content: "\e91f";
+}
+.icon-file-zip:before {
+  content: "\e920";
+}
+.icon-file:before {
+  content: "\e921";
+}
+.icon-cookies:before {
+  content: "\e910";
+}
 .icon-arrow-bottom:before {
   content: "\e900";
 }
@@ -44,9 +101,6 @@
 }
 .icon-download:before {
   content: "\e906";
-}
-.icon-file-pdf:before {
-  content: "\e907";
 }
 .icon-info:before {
   content: "\e908";

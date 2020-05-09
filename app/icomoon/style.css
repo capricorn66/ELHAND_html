@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?22leyp');
-  src:  url('fonts/icomoon.eot?22leyp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?22leyp') format('truetype'),
-    url('fonts/icomoon.woff?22leyp') format('woff'),
-    url('fonts/icomoon.svg?22leyp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?i2dnhb');
+  src:  url('fonts/icomoon.eot?i2dnhb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i2dnhb') format('truetype'),
+    url('fonts/icomoon.woff?i2dnhb') format('woff'),
+    url('fonts/icomoon.svg?i2dnhb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-file-csv:before {
+  content: "\e907";
+}
+.icon-file-doc:before {
+  content: "\e911";
+}
+.icon-file-docx:before {
+  content: "\e912";
+}
+.icon-file-iso:before {
+  content: "\e913";
+}
+.icon-file-jpg:before {
+  content: "\e914";
+}
+.icon-file-mp3:before {
+  content: "\e915";
+}
+.icon-file-mp4:before {
+  content: "\e916";
+}
+.icon-file-pdf:before {
+  content: "\e917";
+}
+.icon-file-png:before {
+  content: "\e918";
+}
+.icon-file-ppt:before {
+  content: "\e919";
+}
+.icon-file-pptx:before {
+  content: "\e91a";
+}
+.icon-file-svg:before {
+  content: "\e91b";
+}
+.icon-file-tiff:before {
+  content: "\e91c";
+}
+.icon-file-txt:before {
+  content: "\e91d";
+}
+.icon-file-xls:before {
+  content: "\e91e";
+}
+.icon-file-xlsx:before {
+  content: "\e91f";
+}
+.icon-file-zip:before {
+  content: "\e920";
+}
+.icon-file:before {
+  content: "\e921";
+}
+.icon-cookies:before {
+  content: "\e910";
+}
 .icon-arrow-bottom:before {
   content: "\e900";
 }
@@ -45,9 +102,6 @@
 }
 .icon-download:before {
   content: "\e906";
-}
-.icon-file-pdf:before {
-  content: "\e907";
 }
 .icon-info:before {
   content: "\e908";

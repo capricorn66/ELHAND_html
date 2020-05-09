@@ -1,6 +1,10 @@
 /* main
 *******************************************************************/
 
+*:focus {
+  box-shadow: none !important;
+}
+
 main {
   color: $body-color;
   padding-bottom: 40px;

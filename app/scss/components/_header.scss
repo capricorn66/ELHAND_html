@@ -12,7 +12,8 @@ header {
         border-bottom: 1px solid $gray-200;
     }
     @include media-breakpoint-down(md) {
-        + .jumbotron {
+        + .jumbotron,
+        + main .jumbotron {
             margin-top: -60px;
         }
     }
