@@ -1,7 +1,6 @@
 /* header
 *******************************************************************/
 
-
 header {
     position: sticky;
     top: 0;
@@ -47,7 +46,7 @@ header {
             }
             @include media-breakpoint-up(lg) {
                 width: 230px;
-                @include transition(width .3s ease);
+                @include transition(width .1s ease);
             }
         }
     }
@@ -263,12 +262,15 @@ header {
                             margin-left: -20px;
                         }
                         .close-dropdown {
-                            color: $white;
+                            color: rgba($white, .4);
                             font-size: 12px;
                             position: absolute;
                             cursor: pointer;
                             right: 0;
-                            top: -20px;
+                            top: -24px;
+                            &:hover {
+                                color: rgba($white, .9);
+                            }
                             @include media-breakpoint-down(md) {
                                 position: relative;
                                 top: 0;

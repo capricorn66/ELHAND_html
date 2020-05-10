@@ -131,11 +131,11 @@ function hideOnClickOutside(element) {
 
 }
 
-const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length )
+const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
 
 
 function handleHeader() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.body.className = "sm";
     } else {
         document.body.className = "";
