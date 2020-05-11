@@ -37,20 +37,29 @@
 }
 
 .collapse-dropdown {
-   .nav-tabs {
-     border-bottom: 1px solid $app-color-1;
-     border-top: 0;
-     .nav-item {
-       .nav-link {
-         color: $white;
-         &.active {
-           background: none;
-           color: $app-color-1;
-         }
+ .nav-tabs {
+   border-bottom: 1px solid $app-color-1;
+   border-top: 0;
+   .nav-item {
+     &::before {
+       display: none;
+     }
+     .nav-link {
+       color: $white;
+       @include media-breakpoint-down(xs) {
+         padding: 10px;
+       }
+       @include media-breakpoint-down(md) {
+         color: $body-color;
+       }
+       &.active {
+         background: none;
+         color: $app-color-1;
        }
      }
    }
  }
+}
 
 main {
 
