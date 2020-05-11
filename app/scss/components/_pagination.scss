@@ -4,6 +4,21 @@
 .pagination {
 
   .page-item {
+    &.disabled {
+      .page-link {
+        opacity: .5;
+        color: $gray-400;
+      }
+    }
+    &.active {
+      .page-link,
+      .page-link:hover,
+      .page-link:focus {
+        background-color: $app-color-1;
+        border-color: $app-color-1;
+        color: $white;
+      }
+    }
     .page-link {
       color: $app-color-1;
       border-radius: 19px;
