@@ -88,7 +88,8 @@ $(document).ready(function(e) {
 
     lightbox.option({
         'resizeDuration': 200,
-        'wrapAround': true
+        'wrapAround': true,
+        'albumLabel': 'Obrazek %1 z %2'
     });
 
 });
