@@ -24,6 +24,7 @@ window.Cookies = Cookies;
 window.rippletInit = rippletInit;
 window.bsCustomFileInput = bsCustomFileInput;
 window.addBackToTop = addBackToTop;
+window.lightbox = lightbox;
 
 $(document).ready(function(e) {
 
@@ -88,8 +89,7 @@ $(document).ready(function(e) {
 
     lightbox.option({
         'resizeDuration': 200,
-        'wrapAround': true,
-        'albumLabel': 'Obrazek %1 z %2'
+        'wrapAround': true
     });
 
 });
