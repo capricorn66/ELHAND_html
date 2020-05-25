@@ -66,6 +66,8 @@ main {
   .nav-tabs-container {
     position: relative;
     padding-top: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-200;
     &::before {
       content: "";
       position: absolute;
