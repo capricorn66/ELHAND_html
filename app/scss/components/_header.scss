@@ -5,8 +5,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 101;
+    width: 100%;
     background: linear-gradient(180deg, rgba($gray-900,.8) 0%, rgba($gray-900,.6) 100%);
     @include media-breakpoint-up(lg) {
+        position: fixed;
         background: $white;
         border-bottom: 1px solid $gray-200;
     }
@@ -46,7 +48,7 @@ header {
             }
             @include media-breakpoint-up(lg) {
                 width: 230px;
-                @include transition(width .1s ease);
+                @include transition(width .25s ease);
             }
         }
     }
