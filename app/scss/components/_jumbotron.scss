@@ -29,6 +29,7 @@
       }
     }
   }
+
   &.swiper-container {
     .swiper-wrapper {
       .swiper-slide {
@@ -53,32 +54,6 @@
           z-index: 1;
         }
       }
-    }
-  }
-
-  .parallax-background,
-  .parallax-window {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-
-  .parallax-mirror {
-    height: 200% !important;
-    @include media-breakpoint-down(md) {
-      height: 300% !important;
-    }
-  }
-
-  .parallax-window {
-    height: 120%;
-    top: -150px;
-    @include media-breakpoint-down(lg) {
-      height: 160%;
-    }
-    @include media-breakpoint-down(md) {
-      height: 200%;
     }
   }
 

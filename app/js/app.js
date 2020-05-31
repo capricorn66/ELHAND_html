@@ -31,18 +31,18 @@ $(document).ready(function(e) {
 
     bsCustomFileInput.init();
 
-    const jumbotronSwiper = new Swiper('.jumbotron.swiper-container', {
+    const jumbotronSwiperSettings = {
         pagination: {
             el: '.jumbotron.swiper-container .swiper-pagination',
             type: 'bullets',
             clickable: true,
         },
-    });
+    };
 
+    const jumbotronSwiper = new Swiper('.jumbotron.swiper-container', jumbotronSwiperSettings);
 
     window.onscroll = function() {handleHeader()};
     handleHeader();
-
 
     rippletInit();
 
@@ -86,7 +86,6 @@ $(document).ready(function(e) {
             hideOnClickOutside(elem);
         });
     });
-
 
     lightbox.option({
         'resizeDuration': 200,
