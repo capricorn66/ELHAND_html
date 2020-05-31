@@ -211,6 +211,10 @@ header {
                         @include media-breakpoint-down(md) {
                             padding: 10px 0;
                             border: 0;
+                            &.active,
+                            &:hover {
+                                color: $app-color-1;
+                            }
                         }
                         border-bottom: 4px solid $white;
                         &.active,
@@ -344,6 +348,8 @@ header {
                                 padding: 10px 0;
                                 font-weight: 300;
                                 white-space: normal;
+                                &.active,
+                                &:active,
                                 &:focus,
                                 &:hover {
                                     background: none;
@@ -352,6 +358,9 @@ header {
                                 }
                             }
                             .collapse-subDropdown {
+                                &.show {
+                                    color: $app-color-1;
+                                }
                                 padding-left: 20px;
                                 .collapse-dropdown-body {
                                     padding: 10px 0 30px;
