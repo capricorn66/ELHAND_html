@@ -397,9 +397,22 @@
                                     <input type="text" class="form-control" id="input1" placeholder="" aria-label="autotransformator mocy" aria-describedby="addon1">
                                     <div class="input-group-append">
                                         <span class="input-group-text" id="addon1">
-                                            * <a tabindex="0" class="ml-10 pt-1" data-container="body" data-trigger="focus" data-toggle="popover" data-html="true" data-placement="top" data-content="<ul><li><a href=''>autotransformator mocy</a></li><li><a href=''>autotransformator rozruchowy</a></li></ul> Nie znalazłeś interesującej Cię opcji?<br> Wpisz w polu odpowiednią wartość"><i class="icon-info font-20"></i></a>
+                                            * <a tabindex="0" class="ml-10 pt-1" data-container="body" data-trigger="focus" data-toggle="popover" data-contentId="#popover1" data-html="true" data-placement="top"><i class="icon-info font-20"></i></a>
                                         </span>
                                     </div>
+                                </div>
+                                <div id="popover1" class="d-none">
+
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="app-color-1 pointer" data-targetinput="#input1" onclick="selectOption(this);">autotransformator mocy</a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="app-color-1 pointer" data-targetinput="#input1" onclick="selectOption(this);">autotransformator rozruchowy</a>
+                                        </li>
+                                    </ul>
+                                    Nie znalazłeś interesującej Cię opcji?<br> Wpisz w polu odpowiednią wartość
+
                                 </div>
                             </div>
                         </div>
@@ -976,6 +989,16 @@
         </div>
 
     </footer>
+
+    <script>
+
+        function selectOption(elem) {
+            const $elem = $(elem);
+            const inputVal = $elem.text();
+            $($elem[0].dataset['targetinput']).val(inputVal);
+        }
+
+    </script>
 
     <div class="cookies">
         <div class="container d-flex flex-column flex-sm-row">

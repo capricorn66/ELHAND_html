@@ -55,7 +55,11 @@ $(document).ready(function(e) {
 
     $('.nav-scroll').navScroll();
 
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({
+        content: function () {
+            return $(this.dataset['contentid']).contents().clone()
+        }
+    });
 
     const html = document.documentElement;
     const navbarToggler = $('#navbarSupportedContent');
@@ -142,7 +146,6 @@ function handleHeader() {
         document.body.className = "";
     }
 }
-
 
 // jQuery.fn.jquery
 // $.fn.popover.Constructor.VERSION

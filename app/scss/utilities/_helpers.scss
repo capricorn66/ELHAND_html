@@ -16,10 +16,10 @@
 }
 
 .app-color-1 {
-    color: $app-color-1;
+    color: $app-color-1 !important;
 }
 .app-color-2 {
-    color: $app-color-2;
+    color: $app-color-2 !important;
 }
 
 .white {
@@ -328,4 +328,8 @@
 .row.gutter-sm > [class^=" col-"] {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.pointer {
+    cursor: pointer;
 }
