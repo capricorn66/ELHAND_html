@@ -111,15 +111,17 @@
     font-weight: 300;
     position: relative;
     margin-bottom: 60px;
-    &::after {
-      content: "";
-      display: block;
-      width: 60px;
-      margin: 20px auto;
-      height: 10px;
-      background: $app-color-1;
-      top: 70px;
-      left: 50%;
+    &.hr {
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        margin: 20px auto;
+        height: 10px;
+        background: $app-color-1;
+        top: 70px;
+        left: 50%;
+      }
     }
     strong {
       font-weight: 600;
