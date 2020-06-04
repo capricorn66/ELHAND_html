@@ -39,20 +39,27 @@
                     <img src="./images/elhand.svg" alt="Elhand" class="d-none d-lg-block">
                     <img src="./images/elhand-white.svg" alt="Elhand" class="d-lg-none">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="nav-lang">
-                    <li class="nav-item active">
-                        <a href="" class="nav-link">PL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">EN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">RU</a>
-                    </li>
-                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-lang dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-world-wide"></i>
+                        </button>
+                        <ul class="nav-lang dropdown-menu">
+                            <li class="nav-item active">
+                                <a href="" class="nav-link">PL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">EN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
 
             <nav class="navbar navbar-expand-lg">
@@ -364,7 +371,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('./images/jumbotron-1.jpg') ">
                 <div class="container">
-                    <h1>Niezawodne rozwiązania</h1>
+                    <h1 class="bg">Niezawodne rozwiązania</h1>
                     <h2>Transformatory, Filtry sinus, Dławiki</h2>
                     <div class="row">
                         <div class="col-lg-6 mb-4">
@@ -375,7 +382,9 @@
                                 warunkach otoczenia, w każdej strefie klimatycznej.</p>
                         </div>
                     </div>
-                    <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    <div class="d-flex align-items-end flex-fill">
+                        <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image: url('./images/jumbotron-2.jpg') ">
@@ -391,13 +400,15 @@
                                 warunkach otoczenia, w każdej strefie klimatycznej.</p>
                         </div>
                     </div>
-                    <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    <div class="d-flex align-items-end flex-fill">
+                        <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image: url('./images/jumbotron-3.jpg') ">
                 <div class="container">
-                    <h1>Niezawodne rozwiązania</h1>
-                    <h2>Transformatory, Filtry sinus, Dławiki</h2>
+                    <h1 class="bg">Niezawodne rozwiązania</h1>
+                    <h2 class="hr">Transformatory, Filtry sinus, Dławiki</h2>
                     <div class="row">
                         <div class="col-lg-6 mb-4">
                             <p>Elhand Transformatory, produkuje wysokiej jakości transformatory
@@ -407,7 +418,9 @@
                                 warunkach otoczenia, w każdej strefie klimatycznej.</p>
                         </div>
                     </div>
-                    <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    <div class="d-flex align-items-end flex-fill">
+                        <a href="" class="btn btn-lg btn-primary btn-bounce-h px-3">Zobacz więcej <i class="icon-arrow-right ml-20"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

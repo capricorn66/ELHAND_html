@@ -62,11 +62,39 @@ header {
         }
     }
 
+    .btn-lang {
+        color: $white;
+        font-size: 20px;
+        @include media-breakpoint-up(lg) {
+            display: none !important;
+        }
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+        &::after {
+            font-size: 14px;
+            margin-left: 8px;
+        }
+    }
+
     .nav-lang {
         display: -ms-flexbox;
         display: flex;
         list-style: none;
-        margin-right: -20px;
+        min-width: auto;
+        @include media-breakpoint-up(lg) {
+            position: relative !important;
+            transform: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+            top: auto !important;
+            border: 0 !important;
+            margin-right: -20px !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
         @include media-breakpoint-down(md) {
             display: none;
         }
@@ -81,6 +109,12 @@ header {
                     display: inline-block;
                     line-height: 0;
                     border-left: 1px solid $gray-400;
+                }
+            }
+            .nav-link {
+                @include media-breakpoint-down(md) {
+                    min-width: 50px;
+                    text-align: center;
                 }
             }
             &.active .nav-link {
