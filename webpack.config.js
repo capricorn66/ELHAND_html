@@ -47,6 +47,7 @@ module.exports = (env, options) => {
         plugins: [
             new CopyPlugin([
                 {from: './app/images', to: 'images'},
+                {from: './app/media', to: 'media'},
                 {from: './app/favicon', to: 'favicon'},
             ]),
             new MiniCssExtractPlugin({
