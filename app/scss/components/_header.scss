@@ -196,7 +196,6 @@ header {
                 > .nav-item {
                     position: static;
                     &.nav-item-social {
-                        margin-left: auto;
                         @include media-breakpoint-down(md) {
                             display: none;
                         }
