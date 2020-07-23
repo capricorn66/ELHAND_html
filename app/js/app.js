@@ -32,6 +32,10 @@ $(document).ready(function(e) {
     bsCustomFileInput.init();
 
     const jumbotronSwiperSettings = {
+        autoplay: {
+            delay: 5000,
+        },
+        effect: 'fade',
         pagination: {
             el: '.jumbotron.swiper-container .swiper-pagination',
             type: 'bullets',
