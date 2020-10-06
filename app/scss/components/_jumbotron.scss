@@ -10,19 +10,55 @@
 
   &.jumbotron-sm {
     padding: 100px 0 30px;
-    background-size: cover;
+    background-size: cover, 0;
+    overflow: hidden;
+    @include media-breakpoint-down(md) {
+      background-size: 0, cover;
+    }
     background-position: center center;
     background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($app-color-2,.4);
+      z-index: 1;
+    }
+    .video-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100%;
+      transform: translateX(-50%) translateY(-50%);
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
     h1 {
       font-size: 32px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 28px;
       }
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
       @include media-breakpoint-down(sm) {
-        font-size: 26px;
+        font-size: 22px;
       }
       @include media-breakpoint-down(xs) {
-        font-size: 24px;
+        font-size: 20px;
       }
       &::after {
         display: none;
@@ -33,19 +69,21 @@
   &.swiper-container {
     .swiper-wrapper {
       .swiper-slide {
-        background-size: cover;
+        background-size: cover, 0;
         background-position: center center;
         background-repeat: no-repeat;
         display: -ms-flexbox;
         display: flex;
         padding: 10vh 0;
-        @include media-breakpoint-down(md) {
-          padding: calc(10vh + 30px) 0 10vh;
-        }
         position: relative;
         min-height: 70vh;
         height: auto;
         overflow: hidden;
+        @include media-breakpoint-down(md) {
+          background-size: 0, cover;
+          padding: 90px 0 70px;
+          min-height: 67.7vw;
+        }
         .video-bg {
           position: absolute;
           top: 50%;
@@ -123,11 +161,14 @@
 
   h1 {
     font-size: 64px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 56px;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 48px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 44px;
     }
     @include media-breakpoint-down(xs) {
       font-size: 40px;

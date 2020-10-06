@@ -29,6 +29,14 @@ window.lightbox = lightbox;
 
 $(document).ready(function(e) {
 
+
+    const observeIitems = document.querySelectorAll('.swiper-slide');
+
+    [...observeIitems].forEach(item => {
+        item.classList.add('js-observe-item-hidden');
+    });
+
+
     bsCustomFileInput.init();
 
     const jumbotronSwiperSettings = {
